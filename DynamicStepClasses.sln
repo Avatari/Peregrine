@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicStepClasses", "DynamicStepClasses\DynamicStepClasses.csproj", "{E06921F8-1F58-4BBF-AE30-685A99B6B893}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskMgrTypes", "TaskMgrTypes\TaskMgrTypes.csproj", "{CCA7F63F-5DAC-40FA-B9AB-25DD62DB86AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E06921F8-1F58-4BBF-AE30-685A99B6B893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06921F8-1F58-4BBF-AE30-685A99B6B893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06921F8-1F58-4BBF-AE30-685A99B6B893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E06921F8-1F58-4BBF-AE30-685A99B6B893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA7F63F-5DAC-40FA-B9AB-25DD62DB86AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA7F63F-5DAC-40FA-B9AB-25DD62DB86AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA7F63F-5DAC-40FA-B9AB-25DD62DB86AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA7F63F-5DAC-40FA-B9AB-25DD62DB86AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0607D2B0-A44E-496E-ABC9-1F7D3F23BC7C}
+	EndGlobalSection
+EndGlobal

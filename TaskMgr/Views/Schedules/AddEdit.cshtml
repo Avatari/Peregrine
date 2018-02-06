@@ -1,0 +1,83 @@
+﻿@model  TaskMgr.ViewModels.SchedulesVM
+
+@if (this.ViewContext.FormContext == null)
+{
+    this.ViewContext.FormContext = new FormContext();
+}
+
+@*@section scripts {
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
+}*@
+<div class="row">
+    <div class="col-md-8">
+        <form>
+            <div asp-validation-summary="ModelOnly" id="ErrorSummary" class="text-danger"></div>
+            <input type="hidden" asp-for="ScheduleId" />
+            <input type="hidden" id="PeriodIntervalLabelOriginalVal" />
+            
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TaskId" class="control-label"></label>
+                @Html.DropDownListFor(model => model.TaskId, new SelectList(Model.TasksLookupList, "Value", "Text"), new { @class = "form-control" })
+                <span asp-validation-for="TaskId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Freq" class="control-label"></label>
+                @Html.DropDownListFor(model => model.Freq, new SelectList(Model.FreqLookupList, "Value", "Text"), new { @class = "form-control",  @onchange = "FreqChanged(this.value)" })
+                <span asp-validation-for="Freq" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label id="PeriodIntervalLabel" asp-for="PeriodInterval" class="control-label"></label>
+                <input asp-for="PeriodInterval" class="form-control" />
+                <span asp-validation-for="PeriodInterval" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Start" class="control-label"></label>
+                <div class='input-group date' id='startDateControl'>
+                    @Html.TextBoxFor(model => model.Start, new { @class = "form-control" })
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                <span asp-validation-for="Start" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EndDt" class="control-label"></label>
+                <div class='input-group date' id='endDateControl'>
+                    @Html.TextBoxFor(model => model.EndDt, new { @class = "form-control" })
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                <span asp-validation-for="EndDt" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Disabled" class="control-label"></label>
+                <input type="checkbox" asp-for="Disabled" class="checkbox" />
+                <span asp-validation-for="Disabled" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<button class="btn btn-sm btn-primary" id="saveButton" onclick="Save(event)">Save</button>*@
+                <button class="btn btn-sm btn-primary" id="saveButton" type="submit" asp-action="Save">Save</button>
+                <button class="btn btn-sm btn-danger" id="cancelButton" onclick="Cancel(event)">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

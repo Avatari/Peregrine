@@ -1,0 +1,45 @@
+﻿@model  TaskMgr.ViewModels.TaskStepsVM
+
+@if (this.ViewContext.FormContext == null)
+{
+    this.ViewContext.FormContext = new FormContext();
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <form>
+            <div asp-validation-summary="ModelOnly" id="ErrorSummary" class="text-danger"></div>
+            <input type="hidden" asp-for="TaskId" />
+            <input type="hidden" asp-for="TaskStepId" />
+            <input type="hidden" asp-for="Seq" />
+            <div class="form-group">
+                <label class="control-label"></label>
+                <input id="SeqDisp" value="@Model.Seq" class="form-control" disabled/>
+             </div>
+
+            <div class="form-group">
+                <label asp-for="StepId" class="control-label"></label>
+                @Html.DropDownListFor(model => model.StepId, new SelectList(Model.StepsLookupList, "Value", "Text"), new { @class = "form-control" })
+                <span asp-validation-for="StepId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PostExecutionDecision" class="control-label"></label>
+                @Html.DropDownListFor(model => model.PostExecutionDecision, new SelectList(Model.OnExecutionLookupList, "Value", "Text"), new { @class = "form-control" })
+                <span asp-validation-for="PostExecutionDecision" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="GotoSeq" class="control-label"></label>
+                <input asp-for="GotoSeq" class="form-control" />
+                <span asp-validation-for="GotoSeq" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<button class="btn btn-sm btn-primary" id="saveButton" onclick="Save(event)">Save</button>*@
+                <button class="btn btn-sm btn-primary" id="saveButton" type="submit" asp-action="Save">Save</button>
+                <button class="btn btn-sm btn-danger" id="cancelButton" onclick="Cancel(event)">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

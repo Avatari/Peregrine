@@ -1,0 +1,11 @@
+C:\Dimple\TaskMgr\DynamicStepClasses\obj\Debug\netcoreapp2.0\DynamicStepClasses.csprojResolveAssemblyReference.cache
+C:\Dimple\TaskMgr\DynamicStepClasses\obj\Debug\netcoreapp2.0\DynamicStepClasses.csproj.CoreCompileInputs.cache
+C:\Dimple\TaskMgr\DynamicStepClasses\obj\Debug\netcoreapp2.0\DynamicStepClasses.AssemblyInfoInputs.cache
+C:\Dimple\TaskMgr\DynamicStepClasses\obj\Debug\netcoreapp2.0\DynamicStepClasses.AssemblyInfo.cs
+C:\Dimple\TaskMgr\DynamicStepClasses\bin\Debug\netcoreapp2.0\DynamicStepClasses.deps.json
+C:\Dimple\TaskMgr\DynamicStepClasses\bin\Debug\netcoreapp2.0\DynamicStepClasses.dll
+C:\Dimple\TaskMgr\DynamicStepClasses\bin\Debug\netcoreapp2.0\DynamicStepClasses.pdb
+C:\Dimple\TaskMgr\DynamicStepClasses\bin\Debug\netcoreapp2.0\TaskMgrTypes.dll
+C:\Dimple\TaskMgr\DynamicStepClasses\bin\Debug\netcoreapp2.0\TaskMgrTypes.pdb
+C:\Dimple\TaskMgr\DynamicStepClasses\obj\Debug\netcoreapp2.0\DynamicStepClasses.dll
+C:\Dimple\TaskMgr\DynamicStepClasses\obj\Debug\netcoreapp2.0\DynamicStepClasses.pdb

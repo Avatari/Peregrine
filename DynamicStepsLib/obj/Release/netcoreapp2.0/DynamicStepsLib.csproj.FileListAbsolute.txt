@@ -1,0 +1,11 @@
+C:\Dimple\TaskMgr\DynamicStepsLib\bin\Release\netcoreapp2.0\DynamicStepsLib.deps.json
+C:\Dimple\TaskMgr\DynamicStepsLib\bin\Release\netcoreapp2.0\DynamicStepsLib.dll
+C:\Dimple\TaskMgr\DynamicStepsLib\bin\Release\netcoreapp2.0\DynamicStepsLib.pdb
+C:\Dimple\TaskMgr\DynamicStepsLib\bin\Release\netcoreapp2.0\TaskMgrTypes.dll
+C:\Dimple\TaskMgr\DynamicStepsLib\bin\Release\netcoreapp2.0\TaskMgrTypes.pdb
+C:\Dimple\TaskMgr\DynamicStepsLib\obj\Release\netcoreapp2.0\DynamicStepsLib.csprojResolveAssemblyReference.cache
+C:\Dimple\TaskMgr\DynamicStepsLib\obj\Release\netcoreapp2.0\DynamicStepsLib.csproj.CoreCompileInputs.cache
+C:\Dimple\TaskMgr\DynamicStepsLib\obj\Release\netcoreapp2.0\DynamicStepsLib.AssemblyInfoInputs.cache
+C:\Dimple\TaskMgr\DynamicStepsLib\obj\Release\netcoreapp2.0\DynamicStepsLib.AssemblyInfo.cs
+C:\Dimple\TaskMgr\DynamicStepsLib\obj\Release\netcoreapp2.0\DynamicStepsLib.dll
+C:\Dimple\TaskMgr\DynamicStepsLib\obj\Release\netcoreapp2.0\DynamicStepsLib.pdb

@@ -1,0 +1,45 @@
+﻿@model TaskMgr.ViewModels.SchedulesVM
+
+@{
+    ViewData["Title"] = "Schedules Setup";
+}
+
+@section styles {
+    
+}
+
+@section scripts {
+    <script src="~/js/SchedulesSetup.js" asp-append-version="true"></script>
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<h2>Schedules Setup</h2>
+
+<input hidden id="pageUrl" value='@Url.Action("Index", "Schedules")' />
+
+<hr />
+
+    <div id="listPanel" class="panel panel-primary" style="padding:4px">
+        <div class="panel-heading">Steps</div>
+        <table id="mainTable" class="table table-striped table-bordered dt-responsive nowrap">
+            <thead>
+                <tr>
+                    <th>ScheduleId</th>
+                    <th>Name</th>
+                    <th>Task</th>
+                    <th>Frequency</th>
+                    <th>Identifier</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Disabled</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+        <div style="padding:4px"><button class="btn btn-sm btn-success" id="addButton" onclick="AddEditData(-1)">Add</button></div>
+    </div>
+
+    <div id="editPanel">
+    </div>

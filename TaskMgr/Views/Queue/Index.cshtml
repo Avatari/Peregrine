@@ -1,0 +1,101 @@
+﻿@model TaskMgr.ViewModels.QueueVM
+
+@{
+    ViewData["Title"] = "Queue";
+}
+
+@section styles {
+
+}
+
+@section scripts {
+    <script src="~/js/QueueSetup.js" asp-append-version="true"></script>
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<hr />
+
+<h2>Queue</h2>
+
+<input hidden id="pageUrl" value='@Url.Action("Index", "Queue")' />
+
+<div id="filtersPanel" class="panel panel-primary" style="padding:4px">
+    <div class="panel-heading">Filters</div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label">Schedule</label>
+                    @Html.DropDownListFor(model => model.ScheduleId, new SelectList(Model.SchedulesLookupList, "Value", "Text"), new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label">Task</label>
+                    @Html.DropDownListFor(model => model.TaskId, new SelectList(Model.TasksLookupList, "Value", "Text"), new { @class = "form-control" })
+                </div>
+            </div>
+            @*<div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label">From</label>
+                    <div class='input-group date' id='startDateControl'>
+                        @Html.TextBoxFor(model => model.ScheduleStartFrom, new { @class = "form-control"})
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label">To</label>
+                    <div class='input-group date' id='endDateControl'>
+                        @Html.TextBoxFor(model => model.ScheduleStartTo, new { @class = "form-control"})
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+        <div class="form-group">
+            <button class="btn btn-sm btn-primary" id="filterButton" onclick="FilterQueues()">Filter</button>
+        </div>
+</div>
+
+<div id="listPanel" class="panel panel-primary" style="padding:4px">
+    <div class="panel-heading">Queues</div>
+    <table id="mainTable" class="table table-striped table-bordered dt-responsive nowrap">
+        <thead>
+            <tr>
+                <th>QueueId</th>
+                <th>Schedule</th>
+                <th>Task</th>
+                <th>Scheduled Start</th>
+                <th>Completed</th>
+                <th>Status</th>
+                <th>Suspended</th>
+                <th>Cancelled</th>
+                <th>Toggle Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<div id="queueStepsPanel" class="panel panel-primary" style="padding:4px" hidden>
+    <div class="panel-heading">Queue Steps</div>
+    <table id="stepsTable" class="table table-striped table-bordered dt-responsive nowrap">
+        <thead>
+            <tr>
+                <th>QueueStepId</th>
+                <th></th>
+                <th>Seq</th>
+                <th>Step</th>
+                <th>Status</th>
+                <th>Added</th>
+                <th>Started</th>
+                <th>Post Execution Decision</th>
+            </tr>
+        </thead>
+    </table>
+</div>

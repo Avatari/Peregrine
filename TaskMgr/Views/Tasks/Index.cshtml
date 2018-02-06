@@ -1,0 +1,48 @@
+﻿@model TaskMgr.ViewModels.StepsVM
+
+@{
+    ViewData["Title"] = "Step Setup";
+}
+
+@section styles {
+
+}
+
+@section scripts {
+    <script src="~/js/TasksSetup.js" asp-append-version="true"></script>
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+<h2>Tasks Setup</h2>
+<hr />
+
+<input hidden id="pageUrl" value='@Url.Action("Index", "Tasks")' />
+<input hidden id="taskStepsPageUrl" value='@Url.Action("Index", "TaskSteps")' />
+
+<div id="listPanel" class="panel panel-primary" style="padding:4px">
+    <div class="panel-heading">Tasks</div>
+    <div style="padding:4px"><button class="btn btn-sm btn-success" id="addButton" onclick="AddEditData(-1)">Create New</button></div>
+    <table id="mainTable" class="table table-striped table-bordered dt-responsive nowrap">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task</th>
+                <th>Valid</th>
+                <th>Started Email</th>
+                <th>Completed Email</th>
+                <th>Created</th>
+                <th>Modified</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<div id="editPanel">
+</div>
+
+<div id="subEditPanel">
+</div>

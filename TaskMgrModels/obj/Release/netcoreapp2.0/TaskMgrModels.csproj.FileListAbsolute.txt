@@ -1,0 +1,9 @@
+C:\Dimple\TaskMgr\TaskMgrModels\bin\Release\netcoreapp2.0\TaskMgrModels.deps.json
+C:\Dimple\TaskMgr\TaskMgrModels\bin\Release\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr\TaskMgrModels\bin\Release\netcoreapp2.0\TaskMgrModels.pdb
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Release\netcoreapp2.0\TaskMgrModels.csprojResolveAssemblyReference.cache
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Release\netcoreapp2.0\TaskMgrModels.csproj.CoreCompileInputs.cache
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Release\netcoreapp2.0\TaskMgrModels.AssemblyInfoInputs.cache
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Release\netcoreapp2.0\TaskMgrModels.AssemblyInfo.cs
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Release\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Release\netcoreapp2.0\TaskMgrModels.pdb

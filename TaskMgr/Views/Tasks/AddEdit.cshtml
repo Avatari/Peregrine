@@ -1,0 +1,51 @@
+﻿@model  TaskMgr.ViewModels.TasksVM
+
+@if (this.ViewContext.FormContext == null)
+{
+    this.ViewContext.FormContext = new FormContext();
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <form>
+            <div asp-validation-summary="ModelOnly" id="ErrorSummary" class="text-danger"></div>
+            <input type="hidden" asp-for="TaskId" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EmailsOnStepStart" class="control-label"></label>
+                <input type="checkbox" asp-for="EmailsOnStepStart" class="checkbox" />
+                <span asp-validation-for="EmailsOnStepStart" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="StartedEmails" class="control-label"></label>
+                <input asp-for="StartedEmails" class="form-control" size="100"/>
+                <span asp-validation-for="StartedEmails" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EmailsOnStepComplete" class="control-label"></label>
+                <input type="checkbox" asp-for="EmailsOnStepComplete" class="checkbox" />
+                <span asp-validation-for="EmailsOnStepComplete" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CompletedEmails" class="control-label"></label>
+                <input asp-for="CompletedEmails" class="form-control" size="100" />
+                <span asp-validation-for="CompletedEmails" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<button class="btn btn-sm btn-primary" id="saveButton" onclick="Save(event)">Save</button>*@
+                <button class="btn btn-sm btn-primary" id="saveButton" type="submit" asp-action="Save">Save</button>
+                <button class="btn btn-sm btn-danger" id="cancelButton" onclick="Cancel(event)">Cancel</button>
+            </div>
+        </form>
+
+    </div>
+</div>

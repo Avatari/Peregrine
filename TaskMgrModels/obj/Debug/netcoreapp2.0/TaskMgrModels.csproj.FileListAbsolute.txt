@@ -1,0 +1,27 @@
+C:\Dimple\TaskMgr\TaskMgrModel\bin\Debug\netcoreapp2.0\TaskMgrModels.deps.json
+C:\Dimple\TaskMgr\TaskMgrModel\bin\Debug\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr\TaskMgrModel\obj\Debug\netcoreapp2.0\TaskMgrModels.csprojResolveAssemblyReference.cache
+C:\Dimple\TaskMgr\TaskMgrModel\obj\Debug\netcoreapp2.0\TaskMgrModels.csproj.CoreCompileInputs.cache
+C:\Dimple\TaskMgr\TaskMgrModel\obj\Debug\netcoreapp2.0\TaskMgrModels.AssemblyInfoInputs.cache
+C:\Dimple\TaskMgr\TaskMgrModel\obj\Debug\netcoreapp2.0\TaskMgrModels.AssemblyInfo.cs
+C:\Dimple\TaskMgr\TaskMgrModel\bin\Debug\netcoreapp2.0\TaskMgrModels.pdb
+C:\Dimple\TaskMgr\TaskMgrModel\obj\Debug\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr\TaskMgrModel\obj\Debug\netcoreapp2.0\TaskMgrModels.pdb
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\bin\Debug\netcoreapp2.0\TaskMgrModels.deps.json
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\bin\Debug\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\bin\Debug\netcoreapp2.0\TaskMgrModels.pdb
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.csprojResolveAssemblyReference.cache
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.csproj.CoreCompileInputs.cache
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.AssemblyInfoInputs.cache
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.AssemblyInfo.cs
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr - Copy\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.pdb
+C:\Dimple\TaskMgr\TaskMgrModels\bin\Debug\netcoreapp2.0\TaskMgrModels.deps.json
+C:\Dimple\TaskMgr\TaskMgrModels\bin\Debug\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr\TaskMgrModels\bin\Debug\netcoreapp2.0\TaskMgrModels.pdb
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.csproj.CoreCompileInputs.cache
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.AssemblyInfoInputs.cache
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.AssemblyInfo.cs
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.pdb
+C:\Dimple\TaskMgr\TaskMgrModels\obj\Debug\netcoreapp2.0\TaskMgrModels.csprojResolveAssemblyReference.cache

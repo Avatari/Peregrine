@@ -1,0 +1,17 @@
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrConsole.deps.json
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrConsole.runtimeconfig.json
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrConsole.runtimeconfig.dev.json
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrConsole.dll
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrConsole.pdb
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\DynamicStepsLib.dll
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrModels.dll
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrTypes.dll
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\DynamicStepsLib.pdb
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrModels.pdb
+C:\Dimple\TaskMgr\TaskMgrConsole\bin\Release\netcoreapp2.0\TaskMgrTypes.pdb
+C:\Dimple\TaskMgr\TaskMgrConsole\obj\Release\netcoreapp2.0\TaskMgrConsole.csprojResolveAssemblyReference.cache
+C:\Dimple\TaskMgr\TaskMgrConsole\obj\Release\netcoreapp2.0\TaskMgrConsole.csproj.CoreCompileInputs.cache
+C:\Dimple\TaskMgr\TaskMgrConsole\obj\Release\netcoreapp2.0\TaskMgrConsole.AssemblyInfoInputs.cache
+C:\Dimple\TaskMgr\TaskMgrConsole\obj\Release\netcoreapp2.0\TaskMgrConsole.AssemblyInfo.cs
+C:\Dimple\TaskMgr\TaskMgrConsole\obj\Release\netcoreapp2.0\TaskMgrConsole.dll
+C:\Dimple\TaskMgr\TaskMgrConsole\obj\Release\netcoreapp2.0\TaskMgrConsole.pdb
