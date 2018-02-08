@@ -1,0 +1,206 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Restore back TaskMgr.bak or run script TaskMgrScript.sql on SQL
+Server/Express to create TaskMgr database. If you don’t have SQL Server license
+you may use SQL Express which is free license. Development was done on SQL
+Server 2014. So if you have lower version you may create database manually then
+run script to generate remaining objects like tables, relations etc.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>There are 3 solutions provided: TaskMgr.sln, TaskMgrConsole.sln,
+and DynamicStepClasses.sln. Depending your need and available resources you can
+deploy applications or directly run from Visual Studio 2017.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>TaskMgr.sln </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>This is a web interface solution, you can host on web server like
+IIS or you can just run from VS2017.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Before deploy/run need to set these settings in appsettings.json.
+TaskMgrConnectionString: set correct connection string to access TaskMgr
+database in read write mode. DynamicStepClassesDllWithFullPath: set location of
+dynamic steps DLL (output of solution DynamicStepClasses.sln).</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>TaskMgrConsole.sln</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>This is console application targeting windows environment. It may
+change to run on different environment. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>This can be run from VS2017 or built DLL can run using “dotnet”
+command.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Before build/run open appsettings.json and make sure to change
+all settings accordingly.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>TaskMgrConnectionString: this is connection string to TaskMgr
+database in read write mode.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>DynamicStepClassesDllWithFullPath: set location of dynamic steps
+DLL (output of solution DynamicStepClasses.sln).</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>TaskMgrInfoFile: File path of SMTP email password file. Sending
+email is optional you can comment application code accordingly. If sending
+email then please make sure to create this text file and set password in this
+file. You may change this implementation as per your security requirements.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ScheduleIntervalInSeconds: Delay between triggers that run the main
+process to execute steps.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>EmailIntervalInSeconds: Email queue execution triggers delay in
+seconds.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>SmtpServer: SMTP server address.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>SmtpPortNumber: SMTP port number.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>FromEmailId: Sender’s email id.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:2.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>FromEmailTitle: Sender’s title.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>DynamicStepClasses.sln</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>This is DLL output solution. Other applications use this DLL and
+execute steps.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Make sure the output folder of this solution matches with the
+other 2 applications “DynamicStepClassesDllWithFullPath” setting.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>At this moment there was an issue with unloading dynamic loaded
+DLLs using “System.Runtime.Loader.AssemblyLoadContext”. So compilation may give
+sharing violation if running on windows desktop. It may run on windows server,
+not tested. You may have to stop other applications to compile this solution.</p>
+
+</div>
+
+</body>
+
+</html>
